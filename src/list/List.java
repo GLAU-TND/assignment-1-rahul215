@@ -27,4 +27,14 @@ public class List {
         list1.add(p);
         top++;
     }
+
+    public void viewContacts() {
+        for (int index = 0; index < top; index++) {
+            System.out.print(index + 1 );
+            list1.get(index).viewContact();
+            for (int j = 0; j < p.size; j++) {
+                System.out.println(list1.get(index).phoneNumber.get(j));
+            }
+        }
+    }
 }
