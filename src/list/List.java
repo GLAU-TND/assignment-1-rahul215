@@ -2,6 +2,7 @@ package list;
 import person.Person;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 public class List {
     Scanner scan = new Scanner(System.in);
@@ -26,6 +27,7 @@ public class List {
         p.setPhoneNumber();
         list1.add(p);
         top++;
+        Collections.sort(list1,Person.PersonNameComparator);
     }
 
     public void viewContacts() {

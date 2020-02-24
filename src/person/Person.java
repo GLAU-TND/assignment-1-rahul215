@@ -1,6 +1,7 @@
 package person;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Person {
@@ -58,4 +59,12 @@ public class Person {
         System.out.println("Last Name : " + this.getLastName());
         System.out.println("Email ID : " + this.getEmailID());
     }
+    public static Comparator<Person> PersonNameComparator = new Comparator<Person>() {
+        @Override
+        public int compare(Person p1,Person p2) {
+            String PersonName1=p1.getFirstName().toUpperCase();
+            String PersonName2=p2.getFirstName().toUpperCase();
+            return PersonName1.compareTo(PersonName2);
+        }
+    };
 }

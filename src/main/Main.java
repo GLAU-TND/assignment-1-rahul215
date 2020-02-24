@@ -1,5 +1,4 @@
 package main;
-import person.Person;
 import list.List;
 import menu.Menu;
 
