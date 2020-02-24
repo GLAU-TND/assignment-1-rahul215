@@ -10,7 +10,7 @@ public class Main {
         Menu m1 = new Menu();
         List t2 = new List();
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Welcome  to contacts menu ::: " );
+        System.out.printf("Welcome  to contacts menu 1 to addContacts,2 to view contacts,3 to search contacts,4 to delete contacts,5 to end::: " );
         m1.menu(sc.nextInt());
         String i = "y";
         while(i.equals("y")) {
