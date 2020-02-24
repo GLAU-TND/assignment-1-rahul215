@@ -52,4 +52,10 @@ public class Person {
     public void setEmailID(String emailID) {
         this.emailID = emailID;
     }
+
+    public void viewContact() {
+        System.out.println("First Name : " + this.getFirstName());
+        System.out.println("Last Name : " + this.getLastName());
+        System.out.println("Email ID : " + this.getEmailID());
+    }
 }
